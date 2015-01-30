@@ -1,0 +1,92 @@
+/* Styles for Navigation Menu */
+
+.navtitle {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:45px;
+}
+.navtitle, .nav {
+	background:#FFF;										/* MAIN BACKGROUND color of the menu bar background */
+}
+.nav {										
+	border-bottom:1px solid #F00;
+	/* The following will give a fixed menu bar at the top of the screen. To move it down the page change the top; value and change postion type to absolute. */
+	position:fixed;
+	top:45px;
+	left:0;
+	width:100%;
+	min-width:1220px;
+	height:35px;											/* This should match the height found in both "ul.navmenu a" and "ul.navmenu, ul.sub1, ul.sub2" for the div to be correct height. */
+}
+ul.navmenu, ul.sub1, ul.sub2 {
+	list-style-type:none;
+	text-indent:10px;
+	font-size:16px;
+	line-height:35px; 										/* This needs to match the height in the "ul.navmenu a" for text to be centered vertically. */
+	text-align:center;
+}
+ul.navmenu li {
+	position:relative;
+	width:135px;											/* This needs to match the width in the "ul.navmenu a" for buttons to space properly. */
+	float:left;
+	margin-right:0px;										/* Horizontal space between buttons */ 
+}
+ul.navmenu a {
+	outline:solid 1px #F00;
+	text-decoration:none;
+	display:block;
+	width:135px;											/* This needs to match the width in the "ul.navmenu li" for buttons to space properly. */
+	height:35px;											/* This needs to match the height in the "ul.navmenu, ul.sub1, ul.sub2" for text to be centered vertically. */
+	background-color:#FFF;									/* DEFUALT background color */
+	color:#000;												/* DEFUALT text color */
+	border-radius:0px;										/* Optional border radius */
+}
+ul.navmenu .sub1 a {
+	margin-top:0px;											/* Vertical space between buttons */
+}
+ul.navmenu .sub2 a {
+	margin-left:1px;										/* Horizontal indent for sub2 items */
+	margin-top:-2px;
+}
+ul.navmenu li:hover > a {
+	background-color:#CCC;									/* PARENT background color */
+	color:#F00;												/* PARENT text color */
+}
+ul.navmenu li:hover a:hover {
+	background-color:#000;									/* CURRENT selected background color */
+	color:#FFF;												/* CURRENT selected text color */
+}
+ul.navmenu ul.sub1 {
+	display:none;
+}
+ul.navmenu ul.sub2 {
+	display:none;
+	position:absolute;
+	top:0px;
+	left:134px;
+}
+ul.navmenu li:hover .sub1 {
+	display:block;
+}
+ul.navmenu .sub1 li:hover .sub2 {
+	display:block;
+}
+
+/* Style for arrows */
+.downArrow, .rightArrow {									/* Color for arrows */
+	color:#F00;
+}
+.downArrow {
+	font-size:10pt;
+	position:absolute;
+	top:0px;
+	right:7px;
+}
+.rightArrow {
+	font-size:8pt;
+	position:absolute;
+	top:5px;
+	right:10px;
+}

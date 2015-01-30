@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.pics {
+	float:left;
+	margin-right:35px;
+	height:100px;
+	width:100px;
+}

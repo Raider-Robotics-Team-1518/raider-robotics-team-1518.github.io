@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.container #news {
+	float:left;
+	width:35%;
+}
+.container #schedule {
+	float:right;
+	width:55%;
+}

@@ -1,0 +1,14 @@
+.slideshow {
+	width:820px;
+	margin-left:100px;
+}
+.slideshow a {
+	color:#07C;
+}
+.slideshow li {
+	padding-top:6px;
+	padding-bottom:6px;
+}
+.floatLeft {
+	float:left;
+}
